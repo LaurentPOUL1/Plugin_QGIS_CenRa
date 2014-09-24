@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+"""
+/***************************************************************************
+ table_postgisDialog
+                                 A QGIS plugin
+ table_postgis
+                             -------------------
+        begin                : 2013-10-15
+        copyright            : (C) 2013 by gcostes
+        email                : sfdg
+ ***************************************************************************/
+
+/***************************************************************************
+ *                                                                         *
+ *   This program is free software; you can redistribute it and/or modify  *
+ *   it under the terms of the GNU General Public License as published by  *
+ *   the Free Software Foundation; either version 2 of the License, or     *
+ *   (at your option) any later version.                                   *
+ *                                                                         *
+ ***************************************************************************/
+"""
+
+from PyQt4 import QtCore, QtGui
+from ui_table_postgis import Ui_table_postgis
+# create the dialog for zoom to point
+
+
+class table_postgisDialog(QtGui.QDialog):
+    def __init__(self):
+        QtGui.QDialog.__init__(self)
+        # Set up the user interface from Designer.
+        self.ui = Ui_table_postgis()
+        self.ui.setupUi(self)

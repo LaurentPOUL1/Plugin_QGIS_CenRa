@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/plugins/CenRa" >
+        <file>help.png</file>
+    </qresource>
+	<qresource prefix="/plugins/CenRa" >
+        <file>page_ajout.png</file>
+    </qresource>
+    <qresource prefix="/plugins/CenRa" >
+        <file>page_new.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,51 @@
+﻿	### Parametres base de donnees ODK
+# Nom de l'hote
+host_odk
+# Port
+port
+# Champ geom
+geom
+
+	### Parametres base de donnees
+# Nom de l'hote
+host_bd
+# Port
+port
+# Nom de la base de donnees
+dbname
+# Nom d utilisateur
+user
+# Mot de passe
+password
+
+
+	# Lignes
+		# Dispos
+			# Pour	
+				# D'eventuelles
+					# Ameliorations
+									# ...
+										# ...
+											# ...
+
+
+	### Requete SQL pour table contour : sur une ligne et entre parentheses
+(gid serial NOT NULL, date_creation date, date_maj date, utilisateur character varying, dept character(2), nom character varying, surface_m2 double precision, surface_ha double precision, type_site character varying, type_milieu character varying, date_premier_pg integer, date_debut_pg integer, date_fin_pg integer, referent character varying, gestion_deleguee character varying, terrain_militaire character(3), ens character(3), zh character(3), adapt_pmr character(3), inform character(3), guide character(3), ouverture_public character(3), obs character(3), anim character(3), n2000_anim character(3), contrat_n2000_conseil character(3), n2000_op character(3), contrat_n2000_benef character(3), contrat_agri character(3), bc_habitat integer, bc_amphibien integer, bc_coleoptere integer, bc_crustace integer, bc_mammifere integer, bc_chiroptere integer, bc_mollusque integer, bc_odonate integer, bc_oiseau integer, bc_orthoptere integer, bc_poisson integer, bc_reptile integer, bc_rhopalocere integer, bc_heterocere integer, bc_autre_invertebre integer, bc_flore integer, bc_bryophyte integer, bc_champignon integer, suiv_analyse_sol character(3), suiv_piezo character(3), suiv_climat character(3), suiv_topo character(3), suiv_habitat character(3), suiv_amphibien character(3), suiv_coleoptere character(3), suiv_crustace character(3), suiv_mammifere character(3), suiv_chiroptere character(3), suiv_mollusque character(3), suiv_odonate character(3), suiv_oiseau character(3), suiv_orthoptere character(3), suiv_poisson character(3), suiv_reptile character(3), suiv_rhopalocere character(3), suiv_heterocere character(3), suiv_autre_invertebre character(3), suiv_flore character(3), suiv_bryophyte character(3), suiv_champignon character(3), suiv_analyse_eau character(3), suiv_phenologie character(3), suiv_frequentation character(3), suiv_paysager character(3), suiv_autre character(3), commentaire text, geom geometry(MultiPolygon,2154))
+
+	### Requete SQL pour table habitat : sur une ligne et entre parentheses
+(gid serial NOT NULL, cd_cb_01 text, lb_cb97_fr_01 text, occupation_01 integer, cd_cb_02 text, lb_cb97_fr_02 text, occupation_02 integer, cd_cb_03 text, lb_cb97_fr_03 text, occupation_03 integer, milieu_code text, milieu_libelle text, surface_m2 double precision, surface_ha double precision, commentaire text, date_creation date, date_maj date, geom geometry(MultiPolygon,2154))
+
+	### Requete SQL pour table travaux realises : sur une ligne et entre parentheses
+(gid serial NOT NULL, id_odk text, site_nom text, id_site text, datedebut date, datefin date, commentaire text, nbpassages integer, problemes text, type_outils text, type_outils_code text, type_porte_outils text, type_porte_outils_code text, type_prestation text, type_prestation_code text, debouche text, quantite text, duree integer, groupe_gestion text, code_niveau3 text, gestion_lib text, id_gestion text, surface_m2 double precision, surface_ha double precision, date_creation date, date_maj date, geom geometry(MultiPolygon,2154))
+(gid serial NOT NULL, id_odk text, site_nom text, id_site text, datedebut date, datefin date, commentaire text, nbpassages integer, problemes text, type_outils text, type_outils_code text, type_porte_outils text, type_porte_outils_code text, type_prestation text, type_prestation_code text, debouche text, quantite text, duree integer, groupe_gestion text, code_niveau3 text, gestion_lib text, id_gestion text, longueur_m double precision, longueur_km double precision, date_creation date, date_maj date, geom geometry(MultiLineString,2154))
+(gid serial NOT NULL, id_odk text, site_nom text, id_site text, datedebut date, datefin date, commentaire text, nbpassages integer, problemes text, type_outils text, type_outils_code text, type_porte_outils text, type_porte_outils_code text, type_prestation text, type_prestation_code text, debouche text, quantite text, duree integer, groupe_gestion text, code_niveau3 text, gestion_lib text, id_gestion text, x_wgs84 double precision, y_wgs84 double precision, date_creation date, date_maj date, geom geometry(Point,2154))
+
+	### Requete SQL pour table travaux prevus : sur une ligne et entre parentheses
+(gid serial NOT NULL, groupe_gestion text, gestion_lib text, id_gestion text, datedebut date, datefin date, commentaire text, surface_m2 double precision, surface_ha double precision,  date_creation date, date_maj date, geom geometry(MultiPolygon,2154))
+(gid serial NOT NULL, groupe_gestion text, gestion_lib text, id_gestion text, datedebut date, datefin date, commentaire text, longueur_m double precision, longueur_km double precision,  date_creation date, date_maj date, geom geometry(MultiLineString,2154))
+(gid serial NOT NULL, groupe_gestion text, gestion_lib text, id_gestion text, datedebut date, datefin date, commentaire text, x_wgs84 double precision, y_wgs84 double precision,  date_creation date, date_maj date, geom geometry(Point,2154))
+
+	### Requete SQL pour table vierge : sur une ligne et entre parentheses
+(gid serial NOT NULL, commentaire text, surface_m2 double precision, surface_ha double precision, geom geometry(MultiPolygon,2154))
+(gid serial NOT NULL, commentaire text, longueur_m double precision, longueur_km double precision, geom geometry(MultiLineString,2154))
+(gid serial NOT NULL, commentaire text, x_wgs84 double precision, y_wgs84 double precision, geom geometry(Point,2154))
