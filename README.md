@@ -1,8 +1,7 @@
 Plugin_QGIS_CenRa
 =================
-	-----------------
-	I - Présentation
-	-----------------
+
+##	I - Présentation
 	
 1- L'utilisateur ouvre QGIS --> Chargement du Plugin CenRa
 
@@ -17,9 +16,7 @@ Plugin_QGIS_CenRa
    
 4- L'utilisateur enregistre l'ensemble de la donnée créée dans PostGis
 
-	---------------------------------
-	II - Installation / Paramétrages
-	---------------------------------
+##	II - Installation / Paramétrages
 	
 1- Placer les formulaires et le fichier config.txt sur le serveur
 
